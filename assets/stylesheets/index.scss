@@ -1,4 +1,15 @@
+@import "variables";
+@import "normalize";
+@import "navbar";
+
 .h1{
 	color: white;
 
+}
+
+.col-lg-8{
+  width:66%;
+}
+.col-lg-4{
+  width:33%;
 }
