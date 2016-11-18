@@ -1,19 +1,20 @@
 {
-    "name": "trip-planner",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "nodemon app.js"
-    },
-    "dependencies": {
-        "body-parser": "^1.15.2",
-        "express": "^4.14.0",
-        "nunjucks": "^3.0.0",
-        "pg": "^6.1.0",
-        "pg-hstore": "^2.3.2",
-        "sequelize": "^3.27.0",
-        "volleyball": "^1.4.1"
-    },
-    "devDependencies": {
-        "nodemon": "^1.11.0"
-    }
+  "name": "trip-planner",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nunjucks": "^3.0.0",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.27.0",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

@@ -4,6 +4,43 @@
 
 {% block content %}
 <div id="app" class="clearfix">
-    <h1>Hello, this is your app.</h1>
+    <h1>Hello, this is your data.</h1>
+
+    <div>
+    Hotels:
+    <select name="hotels">
+    	<option>-- Select Hotel --</option>
+    	{% for Hotel in templateHotels %}
+
+    		<option value="{{Hotel.id}}"> {{ Hotel.name }} </option>
+
+    	{% endfor %}
+    </select>
+    </div>
+
+    <div>
+    Restaurants:
+    <select name="restaurants">
+    	<option>-- Select Restaurant --</option>
+    	{% for Restaurant in templateRestaurants %}
+
+    		<option value="{{Restaurant.id}}"> {{ Restaurant.name }} </option>
+
+    	{% endfor %}
+    </select>
+	</div>
+
+	<div>
+    Activities:
+   <select name="activities">
+    	<option>-- Select Activity --</option>
+    	{% for Activity in templateActivities %}
+
+    		<option value="{{Activity.id}}"> {{ Activity.name }} </option>
+
+    	{% endfor %}
+    </select>
+    </div>
+
 </div>
 {% endblock %}
