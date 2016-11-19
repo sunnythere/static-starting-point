@@ -2,14 +2,27 @@
 @import "normalize";
 @import "navbar";
 
-.h1{
-	color: white;
 
+html,body{
+    height:100%;
+    max-width:100%;
+}
+body {
+  padding-top: 70px;
+  max-width: 100%;
+}
+.container-fluid{
+  height: 100%;
+  overflow-y: hidden;
 }
 
-.col-lg-8{
-  width:66%;
+.map, .sidebar{
+  height: 100%;
 }
-.col-lg-4{
-  width:33%;
+.places,.schedule{
+  height: 40%;
+
+}
+.row{
+  height: 100%;
 }
