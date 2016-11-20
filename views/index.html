@@ -3,60 +3,71 @@
 {% block title %}Your Trip{% endblock %}
 
 {% block map %}
-<div class = "map">
+<div id="map-canvas" class="map">
+
     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+<!--    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe> -->
 </div>
 {% endblock %}
 {% block places %}
-<div id="app" class="clearfix">
+<div id="places" class="clearfix">
 
-    <div>
+    <div class="choose">
     Hotels:<br>
-    <select name="hotels">
-    	<option>-- Select Hotel --</option>
-    	{% for Hotel in templateHotels %}
+    <select class="dropdown" name="hotels">
+        <option>-- Select Hotel --</option>
+        {% for Hotel in templateHotels %}
 
-    		<option value="{{Hotel.id}}"> {{ Hotel.name }} </option>
+            <option value="{{Hotel.id}}"> {{ Hotel.name }} </option>
 
-    	{% endfor %}
+
+        {% endfor %}
     </select>
+        <div class="btn-group"><button type="" class="btn-add" id="add-hotel">+</button></div>
     </div>
 
-    <div>
+    <div class="choose">
     Restaurants:<br>
-    <select name="restaurants">
-    	<option>-- Select Restaurant --</option>
-    	{% for Restaurant in templateRestaurants %}
+    <select class="dropdown" name="restaurants">
+        <option>-- Select Restaurant --</option>
+        {% for Restaurant in templateRestaurants %}
 
-    		<option value="{{Restaurant.id}}"> {{ Restaurant.name }} </option>
+            <option value="{{Restaurant.id}}"> {{ Restaurant.name }} </option>
 
-    	{% endfor %}
+        {% endfor %}
     </select>
-	</div>
+        <div class="btn-group"><button type="button" class="btn-add" id="add-restaurant">+</button></div>
+    </div>
 
-	<div>
+    <div class="choose">
     Activities: <br>
-   <select name="activities">
-    	<option>-- Select Activity --</option>
-    	{% for Activity in templateActivities %}
+   <select class="dropdown" name="activities">
+        <option>-- Select Activity --</option>
+        {% for Activity in templateActivities %}
 
-    		<option value="{{Activity.id}}"> {{ Activity.name }} </option>
+            <option value="{{Activity.id}}"> {{ Activity.name }} </option>
 
-    	{% endfor %}
+        {% endfor %}
     </select>
+        <div class="btn-group"><button type="button" class="btn-add" id="add-activity">+</button></div>
     </div>
 
 </div>
 {% endblock %}
 
 {% block schedule %}
-<div id="app" class="clearfix">
 
+<div id="days">
+    Day &nbsp;
+    <div class="btn-group"><button type="button" class="btn-day">1</button></div>
+    <div class="btn-group"><button type="button" class="btn-day">2</button></div>
+    <div class="btn-group"><button type="button" class="btn-day">3</button></div>
+</div>
+<div id="schedule" class="clearfix">
     <div>
     Hotels:
         <ul>
-            <li>some hotels</li>
+            <li>{{added_hotel}}</li>
         </ul>
     </div>
     <div>

@@ -1,6 +1,6 @@
-/*
 
-$nav-bg: #ddd;
+
+$nav-bg: rgb(151, 165, 40);
 $nav-txt: #444;
 
 .navbar {
@@ -13,9 +13,6 @@ $nav-txt: #444;
       text-decoration: underline;
     }
   }
-  ul {
-    list-style-type: none;
-  }
 }
 
 .navbar-inverse {
@@ -27,8 +24,9 @@ $nav-txt: #444;
 
 .navbar-brand {
   float: left;
-  font-size: 1.2em;
-  margin-top: 13px;
+  font-size: 1.4em;
+  margin-top: 3px;
+  display: inline-block;
 }
 
 .navbar-right {
@@ -40,4 +38,13 @@ $nav-txt: #444;
   top: 0;
   width: 100%;
 }
-*/
+
+.navbar-right {
+  float: right;
+  margin: 14px;
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+

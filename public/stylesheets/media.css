@@ -1,0 +1,16 @@
+@media screen and (max-width: 425px) {
+  .col-xs-12 {
+    width: 100%; }
+  .map {
+    height: 300px; }
+  .navbar {
+    padding: 4px; }
+  .navbar-fixed-top {
+    padding: 2px; }
+  .navbar-brand {
+    padding: 8px;
+    height: auto; }
+  .navbar-right {
+    float: right;
+    padding: 0px;
+    margin: 5px; } }

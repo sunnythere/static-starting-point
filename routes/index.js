@@ -9,9 +9,10 @@ const Place = models.Place;
 const Activity = models.Activity;
 const Restaurant = models.Restaurant;
 
+
 router.get('/', function (req, res, next) {
 
-   let outerScopeContainer = {};
+  let outerScopeContainer = {};
 	let arrModels = [Hotel, Restaurant, Activity];
 
 Promise.each(arrModels, function(model){
@@ -27,8 +28,25 @@ Promise.each(arrModels, function(model){
     templateRestaurants: outerScopeContainer.restaurantsDB,
     templateActivities: outerScopeContainer.activitiesDB
   });
+
 })
 .catch(next);
+
+
+//router.post('/', function(req, res, next) {
+
+   //let button = document.getElementById("add-hotel");
+
+   //  $("#add-hotel").click(function(){ console.log("hello") });
+   // //Hotel.findOne({
+   //    where: { id: Hotel.id }
+   // }).then(function(foundHotel) {
+   //  res.render('index', {
+   //    added_hotel: Hotel.name
+   //  });
+
+   //.catch(next);
+//})
 
 
 });

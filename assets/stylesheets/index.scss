@@ -1,28 +1,95 @@
 @import "variables";
 @import "normalize";
 @import "navbar";
-
+@import "media";
 
 html,body{
-    height:100%;
-    max-width:100%;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+   height:100%;
+   max-width:100%;
 }
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   max-width: 100%;
 }
+
 .container-fluid{
   height: 100%;
-  overflow-y: hidden;
 }
 
 .map, .sidebar{
   height: 100%;
+  padding: 0px;
+  overflow-y: scroll;
+  background-color: #31708f;
 }
-.places,.schedule{
-  height: 40%;
 
+#places {
+  margin: 5%;
+  padding: 10px 10px 10px 20px;
+  background-color: #7DC6E8;
+  border-radius: 40px 5px;
+  background-color: rgba(255,255,255,.15)
 }
-.row{
+
+#schedule {
+  margin: 0% 5% 5% 5%;
+  padding: 10px 10px 10px 20px;
+  background-color: #7DC6E8;
+  border-radius: 0px 0px 5px 40px;
+  background-color: rgba(255,255,255,.15)
+}
+
+#days {
+  margin: 5% 5% 0% 5%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px 40px 0px 0px;
+  background-color: rgba(202, 210, 87,.30);
+  font-size: 1.2em;
+}
+
+.row, .largerow{
   height: 100%;
+}
+
+.choose {
+	padding: 5px;
+}
+
+.dropdown {
+	width: 85%;
+	height: auto;
+   max-height: 300px;
+   margin: 5px 0px;
+   border-radius: 3px;
+}
+
+.btn-day {
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.15);
+	border: none;
+	margin: 1px;
+	padding: 8px 10px;
+}
+
+.btn-day:hover  {
+		background-color: rgba(255,255,255,.45);
+}
+
+.btn-add {
+	background-color: grey;
+	border-radius: 20px;
+	border: none;
+	margin-left: 3px;
+}
+
+.btn-cancel {
+	background-color: red;
+	border-radius: 20px;
+	border: none;
+}
+
+.center {
+	text-align: center;
 }
