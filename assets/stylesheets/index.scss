@@ -18,7 +18,7 @@ body {
   height: 100%;
 }
 
-.map, .sidebar{
+#map-canvas, .map, .sidebar{
   height: 100%;
   padding: 0px;
   overflow-y: scroll;
@@ -90,6 +90,4 @@ body {
 	border: none;
 }
 
-.center {
-	text-align: center;
-}
+

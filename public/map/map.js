@@ -14,9 +14,12 @@ function initialize_gmaps() {
     // initialize a new Google Map with the options
     var map = new google.maps.Map(map_canvas_obj, mapOptions);
     // Add the marker to the map
+
+
     var marker = new google.maps.Marker({
         position: myLatlng,
-        title:"Hello World!"
+        title:"Hello World!",
+
     });
     // Add the marker to the map by calling setMap()
     marker.setMap(map);

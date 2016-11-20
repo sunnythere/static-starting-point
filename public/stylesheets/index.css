@@ -355,6 +355,7 @@ table {
 .navbar-brand {
   float: left;
   font-size: 1.4em;
+  letter-spacing: 1px;
   margin-top: 3px;
   display: inline-block; }
 
@@ -376,7 +377,7 @@ table {
 @media screen and (max-width: 425px) {
   .col-xs-12 {
     width: 100%; }
-  .map {
+  #map-canvas, .map {
     height: 300px; }
   .navbar {
     padding: 4px; }
@@ -403,7 +404,7 @@ body {
 .container-fluid {
   height: 100%; }
 
-.map, .sidebar {
+#map-canvas, .map, .sidebar {
   height: 100%;
   padding: 0px;
   overflow-y: scroll;
@@ -463,6 +464,3 @@ body {
   background-color: red;
   border-radius: 20px;
   border: none; }
-
-.center {
-  text-align: center; }

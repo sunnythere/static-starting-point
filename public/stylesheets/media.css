@@ -1,7 +1,7 @@
 @media screen and (max-width: 425px) {
   .col-xs-12 {
     width: 100%; }
-  .map {
+  #map-canvas, .map {
     height: 300px; }
   .navbar {
     padding: 4px; }
