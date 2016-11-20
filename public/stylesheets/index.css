@@ -374,7 +374,7 @@ table {
     display: inline-block;
     margin: 5px; }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 760px) {
   .col-xs-12 {
     width: 100%; }
   #map-canvas, .map {
